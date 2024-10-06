@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{  /* Jika mau ubah background atau teks di seluruh coding, cukup ubah diroot */
+    --primaryTextColor: #030303; /* untuk judul */
+    --secondaryTextColor: #3E3E3E; /* untuk paragraph */
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9; /* untuk line di pre-title */
+
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #597391;
+    --primaryIconColorHover: #475C74;
+
+    --sectionPadding: 6rem 0;
+    
+    --itemBorderRadius: 0.7rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 strong{
+    color: var(--primaryTextColor);
+}
+
+p{
+    font-size: 1.5rem; /* 1rem=16px, 2rem=32px*/
+    line-height: 2.5rem;
+    position: relative;
+    width: 100%;
+    color: var(--secondaryTextColor);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{ /* untuk pembatasa kanan kiri website/grid */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) { /* agar desain web responsif (desain web menyesuaikan tampilan sesuai uk layar perangkat user */
+    .main-container{
+        width: 90%;
+    }
+}
+
+/* Judul page home "Halo, i'm" */
+.home-tittle{
+    letter-spacing: .2rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+/* Logo dan Navigasi Menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul{
+    list-style: none; /* menghilangkan titik hitam default pada list */
+    display: flex; /* agar isi navbar yg awalnya list dibawah menjadi kesamping semua*/
+    gap: 3.1rem; /* jarak antara isi navbar */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a{
+    color: var(--primaryIconColor); /* warna logo */
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: var(--primaryTextColor);
+}
+
+/* Nav Burger untuk mobile */
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #030303;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/* Bagian hero */
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-right img{
+    width: 90%;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-left p{ /* space antara paragraf dengan button About Me*/
+    margin-bottom: 45px;
+}
+
+.btn-about-me{
+    background-color: var(--primaryIconColor);
+    color: #fff;
+    width: 201px;
+    padding: 10px 35px;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.btn-about-me:hover{
+    background-color: var(--primaryIconColorHover);
+}
+
+#about{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about-left img{
+    width: 70%;
+}
+
+.about-left{
+    display: flex;
+    justify-content: center;
+}
+
+.page-tittle{
+    color: var(--primaryIconColor);
+    font-size: 35px;
+    letter-spacing: .2rem;
+    margin-bottom: 15px; /* spacing heading dan paragraf */
+    position: relative;
+    width: fit-content;
+    font-weight: 600;
+}
+
