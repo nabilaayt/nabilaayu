@@ -25,10 +25,12 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 .main-container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -40,32 +42,79 @@
     margin-top: -6px;
 }
 
-.nav{
-    align-items: center;
-    flex: 1 1;
+nav{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    align-items: center;
+    flex: 1 1;
+    padding: 2rem 2rem;
     list-style: none;
 }
 
-.nav ul{
+nav ul{
     position: relative;
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
-}
-
-nav ul li:hover a{
-    color: var(--primaryIconColor);
+    align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul li a{
     display: inline-block;
-    padding: 5px;
+    padding: 10px 0;
     color: var(--secondaryTextColor);
     text-decoration: none;
+    transition: all;
+    transition-property: 300ms;
+    border-bottom: 2.2px solid #475c7400;
+}
+
+nav ul li a:hover{
+    color: var(--primaryIconColor);
+    border-bottom: 2.2px solid var(--primaryIconColorHover);
+}
+
+.menu-icon{
+    /* background-color: #BB9F87; */
+    color: var(--primaryTextColor);
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        /* display: none; */
+        flex-direction: column;
+        display: space-between;
+        width: 100%;
+    }
+
+    nav ul.hidden{
+        display: none;
+        justify-content: flex-end;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li:first-of-type{
+        padding-top: 8px;
+    }
+    
+    nav ul li:last-of-type{
+        padding-bottom: 8px;
+    }
 }
 
 body{
@@ -108,6 +157,24 @@ body{
     font-weight: 700;
 }
 
+.hero{
+    text-align: center;
+    padding: 20px;
+}
+
+.major-university-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    position: relative;
+    padding-right: 9rem;
+    padding-left: 9rem;
+    
+}
+
 .major, .university{
-    padding: 10px;
+    font-size: 1rem;
+    color: var(--secondaryTextColor);
+    margin: 10px 0;
 }
