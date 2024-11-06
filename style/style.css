@@ -73,6 +73,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: var(--primaryIconColor);
+    font-weight: 500;
     border-bottom: 2.2px solid var(--primaryIconColorHover);
 }
 
