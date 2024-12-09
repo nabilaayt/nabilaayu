@@ -28,6 +28,11 @@
     scroll-padding-top: 60px;
 }
 
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
 .main-container{
     max-width: 1200px;
     width: 100%;
@@ -230,3 +235,76 @@ body{
     color: var(--primaryBackgroundColor);
 }
 
+.about-section{
+    height: 80vh;
+}
+
+section{
+    display: flex;
+    height: 90vh;
+    flex-wrap: wrap;
+}
+
+.titleAbout{
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    justify-content: right;
+}
+
+section .divSection{
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: column;
+}
+
+.imgAbout{
+    width: 510px;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.contentAbt{
+    width: 500px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+p{
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    unicode-bidi: isolate;
+}
+
+.contentAbt span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skill{
+    display: grid;
+    gap: 16px;
+    /* margin: 20px;
+    padding: 10px; */
+}
+
+.skill span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryIconColor);
+    border-radius: 8px;
+    padding: 10px;
+}
