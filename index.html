@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Nabila Ayu Talita</title>
     <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
@@ -23,17 +24,17 @@
                     </div>
                     
                 <ul id="menu-list" class="hidden">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#main">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#titleProject">Project</a></li>
+                    <li><a href="#titleContact">Contact</a></li>
                     <li><a href="/resume.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="hero">
+        <div id="main" class="hero">
             <p class="introduction"><img src="/images/Emoji Waving Hand.png" alt="Emoji Wahing Hand"> My name is Nabila, and I am student at Universitas Sriwijaya</p>
             <h1 class="title1">UI/UX DESIGNER &</h1>
             <h1 class="title2">BEGINNER FRONT END</h1>
@@ -49,7 +50,7 @@
 
             <div class="button-wrapper">
                 <a href="#about">Who I am?</a>
-                <a href="#project">What I've Done</a>
+                <a href="#titleProject">What I've Done</a>
             </div>
         </div>
     </main>
@@ -116,7 +117,7 @@
     </div>
     <section id="contact" class="contact">
         <div class="contact-container">
-            <form method="POST" action="" class="contact">
+            <form method="POST" action="" class="contact" name="contact-form">
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
                 <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
@@ -124,6 +125,27 @@
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/nabilatll/" class="fa-brands fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/nabilaayutalita/?profileId=ACoAAEefp40BqsrEGdYN7NLlFs8-5_V4viNQ0O8" class="fa-brands fa-linkedin"></a>
+                <a href="https://wa.me/6289630601526" class="fa-brands fa-whatsapp"></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#titleProject">Project</a></li>
+                    <li><a href="#titleContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>&copy;2024 Nabila Ayu Talita</p>
+            </div>
+        </div>
+    </footer>
 
     <Script src="/script.js"></Script>
 </body>

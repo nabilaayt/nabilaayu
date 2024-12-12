@@ -1,8 +1,8 @@
 const menuicon = document.getElementById("menu-icon");
 const menulist = document.getElementById("menu-list");
-const scriptURL = 'https://script.google.com/macros/sAKfycbyWGbMj-q7d3XL25D_5v-EMBCOskJxYGL_dV9twCMjcv39ynuwnkSDEeR9sv1FJXGMtXQ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxi5-an9Wqd8JNu8f7M25FtulDnCJ9VLmcU5e36_ocKD7J-ZMM4F2cR2V6hAyNhQ4elJA/exec';
 
-const form = document.forms['contact']
+const form = document.forms['contact-form']
 
 form.addEventListener('submit', e => {
     e.preventDefault();
