@@ -123,54 +123,6 @@ nav ul li a:hover{
     transition: all 0.3s ease;
 }
 
-@media only screen and (max-width : 991px){
-    
-    header{
-        justify-content: flex-start;
-    }
-    
-    nav{
-        flex-wrap: wrap;
-        background-color: var(--primaryBackgroundColor);
-    }
-
-    nav ul{
-        /* display: none; */
-        flex-direction: column;
-        display: space-between;
-        width: 100%;
-        background-color: var(--primaryBackgroundColor);
-    }
-
-    nav ul.hidden{
-        display: none;
-        justify-content: flex-end;
-    }
-
-    .menu-icon{
-        display: flex;
-        align-items: center;
-    }
-
-    nav ul li:first-of-type{
-        padding-top: 8px;
-    }
-    
-    nav ul li:last-of-type{
-        padding-bottom: 8px;
-    }
-
-    .footerNav ul{
-        flex-direction: column;
-    }
-
-    .footerNav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-}
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color:var(--primaryBackgroundColor);
@@ -217,24 +169,6 @@ body{
     padding: 20px;
 }
 
-.major-university-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -15px;
-    position: relative;
-    padding-right: 12rem;
-    padding-left: 12rem;
-    flex-wrap: wrap;
-    
-}
-
-.major, .university{
-    font-size: 1rem;
-    color: var(--secondaryTextColor);
-    margin: 10px 0;
-}
-
 .intro-profile img{
     width: 340px;
     height: 400px;
@@ -251,11 +185,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    margin-top: -180px;
-}
-
-.button-wrapper{
-    display: flex;
+    margin-top: -150px;
 }
 
 .button-wrapper a{
@@ -274,6 +204,7 @@ body{
 }
 
 .button-wrapper{
+    display: flex;
     justify-content: center;
     position: relative;
     margin-top: -75px;
@@ -297,7 +228,6 @@ section{
 .titleAbout{
     display: flex;
     flex-direction: column;
-    
 }
 
 .titleAbout h1{
@@ -319,7 +249,6 @@ section .divSection{
     width: 400px;
     height: 500px;
     display: block;
-    
 }
 
 .contentAbt{
@@ -645,4 +574,171 @@ footer{
 
 .footerBottom p{
     color: var(--primaryBackgroundColor);
+}
+
+@media only screen and (max-width : 991px){
+    
+    header{
+        justify-content: flex-start;
+        padding: 10px;
+        height: 50px;
+    }
+    
+    nav{
+        flex-wrap: wrap;
+        background-color: var(--primaryBackgroundColor);
+    }
+
+    nav ul{
+        /* display: none; */
+        flex-direction: column;
+        display: space-between;
+        width: 100%;
+        background-color: var(--primaryBackgroundColor);
+    }
+
+    nav ul.hidden{
+        display: none;
+        justify-content: flex-end;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    body .title1{
+        font-size: 5rem;
+    }
+
+    body .title2{
+        font-size: 5.2rem;
+    }
+
+    nav ul li:first-of-type{
+        padding-top: 15px;
+    }
+    
+    nav ul li:last-of-type{
+        padding-bottom: 15px;
+    }
+
+    body .intro-profile img{
+        width: 340px;
+        height: 400px;
+    }
+
+    body .intro-profile{
+        margin-top: -120px;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    body .introduction{
+        font-size: 15px;
+        gap: 8px;
+    }
+
+    body .introduction img{
+        width: 22px;
+        height: 22px;
+    }
+    
+    body .title1{
+        font-size: 4rem;
+    }
+
+    body .title2{
+        font-size: 4.7rem;
+    }
+
+    body .intro-profile img{
+        width: 300px;
+        height: 360px;
+    }
+
+    body .intro-profile{
+        margin-top: -140px;
+    }
+
+    body .button-wrapper a{
+        margin: 10px;
+    }
+    
+    body section{
+        height: auto;
+        padding: 30px 0;
+    }
+
+    section .divSection{
+        width: 100vw;
+        height: auto;
+    }
+
+    body .about-section{
+        height: 90vh;
+    }
+
+    body .imgAbout{
+        margin-top: 50px;
+        width: 330px;
+        height: 410px;
+    }
+
+    body .titleAbout{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    body .contentAbt{
+        width: 400px;
+    }
+
+    body .skill-item{
+        padding: 0.8rem 2rem;
+        flex: 1 1 calc(30% - 1rem);
+        max-width: 300px;
+    }
+
+    body .titleProject{
+        margin-top: 650px;
+    }
+
+    body .titleContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    body .titleContact p{
+        text-align: center;
+    }
+
+    body .contact-container{
+        height: 80vh;
+    }
+
+    body .contact-inputs{
+        width: 400px;
+        height: 60px;
+        padding-left: 25px;
+        font-weight: 400;
+    }
+
+    .contact textarea{
+        height: 220px;
+    }
+    
 }
