@@ -315,6 +315,14 @@ section{
     align-items: center;
 }
 
+body .project-section{
+    height: auto;
+    min-height: auto;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    display: block;
+}
+
 .titleProject{
     display: flex;
     justify-content: center;
@@ -590,7 +598,6 @@ footer{
     }
 
     nav ul{
-        /* display: none; */
         flex-direction: column;
         display: space-between;
         width: 100%;
@@ -608,11 +615,24 @@ footer{
     }
 
     body .title1{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     body .title2{
-        font-size: 5.2rem;
+        font-size: 4.8rem;
+    }
+
+    body .intro-profile img{
+        width: 320px !important;
+        height: 380px !important;
+    }
+
+    body .intro-profile{
+        margin-top: -110px !important;
+    }
+
+    body .button-wrapper a{
+        margin: 10px;
     }
 
     nav ul li:first-of-type{
@@ -630,6 +650,64 @@ footer{
 
     body .intro-profile{
         margin-top: -120px;
+    }
+
+    body .about-section{
+        height: 90vh;
+    }
+
+    body .imgAbout{
+        margin-top: 50px;
+    }
+
+    body .titleAbout{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    body .contentAbt{
+        width: 500px;
+    }
+
+    body .skill-item{
+        padding: 0.8rem 3rem;
+        flex: 1 1 calc(30% - 1rem);
+        max-width: 220px;
+    }
+
+    body .titleProject{
+        /* margin-top: 750px; */
+        margin-top: 750px;
+        padding-bottom: 30px;
+    }
+
+    body .project-section{
+        height: auto;
+        min-height: auto;
+        padding: 20px 0;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    body .titleContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    body .titleContact p{
+        text-align: center;
+    }
+
+    body .titleContact p{
+        width: 90%;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+
+    body p{
+        margin: 0 auto;
     }
 
     .footerNav ul{
@@ -660,7 +738,7 @@ footer{
     }
 
     body .title2{
-        font-size: 4.7rem;
+        font-size: 4.3rem;
     }
 
     body .intro-profile img{
@@ -692,8 +770,8 @@ footer{
 
     body .imgAbout{
         margin-top: 50px;
-        width: 330px;
-        height: 410px;
+        width: 300px;
+        height: 380px;
     }
 
     body .titleAbout{
@@ -706,13 +784,22 @@ footer{
     }
 
     body .skill-item{
-        padding: 0.8rem 2rem;
+        padding: 0.9rem 2rem;
         flex: 1 1 calc(30% - 1rem);
-        max-width: 300px;
+        max-width: 168px;
+        font-size: 15px;
     }
 
     body .titleProject{
-        margin-top: 650px;
+        margin-top: 670px;
+    }
+
+    .card{
+        width: 310px;
+    }
+
+    .card .label{
+        left: 21px;
     }
 
     body .titleContact{
@@ -727,11 +814,11 @@ footer{
     }
 
     body .contact-container{
-        height: 80vh;
+        height: 85vh;
     }
 
     body .contact-inputs{
-        width: 400px;
+        width: 330px;
         height: 60px;
         padding-left: 25px;
         font-weight: 400;
