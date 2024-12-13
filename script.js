@@ -1,8 +1,24 @@
-const menuicon = document.getElementById("menu-icon");
-const menulist = document.getElementById("menu-list");
+// const menuicon = document.getElementById("menu-icon");
+// const menulist = document.getElementById("menu-list");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxi5-an9Wqd8JNu8f7M25FtulDnCJ9VLmcU5e36_ocKD7J-ZMM4F2cR2V6hAyNhQ4elJA/exec';
-
 const form = document.forms['contact-form']
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-menu .nav-item a").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
+
+// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
+// }));
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -12,6 +28,6 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 });
 
-menuicon.addEventListener("click", () => {
-    menulist.classList.toggle("hidden");
-});
+// menuicon.addEventListener("click", () => {
+//     menulist.classList.toggle("hidden");
+// });
