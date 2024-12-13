@@ -1,5 +1,3 @@
-// const menuicon = document.getElementById("menu-icon");
-// const menulist = document.getElementById("menu-list");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxi5-an9Wqd8JNu8f7M25FtulDnCJ9VLmcU5e36_ocKD7J-ZMM4F2cR2V6hAyNhQ4elJA/exec';
@@ -15,11 +13,6 @@ document.querySelectorAll(".nav-menu .nav-item a").forEach(n => n.addEventListen
     navMenu.classList.remove("active");
 }));
 
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     navMenu.classList.remove("active");
-// }));
-
 form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
@@ -27,7 +20,3 @@ form.addEventListener('submit', e => {
     .then(() => { window.location.reload(); })
     .catch(error => console.error('Error!', error.message))
 });
-
-// menuicon.addEventListener("click", () => {
-//     menulist.classList.toggle("hidden");
-// });
