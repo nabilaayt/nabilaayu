@@ -755,7 +755,7 @@ footer{
     }
 
     body .title2{
-        font-size: 4.3rem;
+        font-size: 4.2rem;
     }
 
     body .intro-profile img{
@@ -797,14 +797,14 @@ footer{
     }
 
     body .contentAbt{
-        width: 400px;
+        width: 340px;
     }
 
     body .skill-item{
         padding: 0.9rem 2rem;
         flex: 1 1 calc(30% - 1rem);
-        max-width: 168px;
-        font-size: 15px;
+        max-width: 167px;
+        font-size: 14px;
     }
 
     body .titleProject{
