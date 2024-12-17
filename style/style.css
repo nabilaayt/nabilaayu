@@ -224,6 +224,8 @@ section{
     display: flex;
     height: 90vh;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .titleAbout{
@@ -243,7 +245,7 @@ section .divSection{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: column;
+    flex-direction: column;
 }
 
 .imgAbout{
@@ -308,12 +310,6 @@ p{
 .adaptibility{
     background-color: var(--secondaryIconColor);
     color: var(--primaryBackgroundColor);
-}
-
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 body .project-section{
